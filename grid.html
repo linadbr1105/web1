@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    p:only-child {
+    background: #ff0000;
+  }
+  input:required {
+  background-color: yellow;
+}
+input:out-of-range {
+  border: 2px solid red;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: red;
+}
+:-ms-input-placeholder { /* Internet Explorer */
+  color: red;
+}
+
+::placeholder {
+  color: red;
+}
+input:read-only {
+  background-color: blue;
+}
+input:read-write {
+  background-color: yellowgreen;
+}
+:root {
+  background: white;
+}
+::selection {
+  color: red;
+  background: yellow;
+}
+:target {
+  border: 2px solid #D4D4D4;
+  background-color: yellow;
+}
+input:valid {
+  background-color: yellow;
+}
+    </style>
+  </head>
+
+  <body>
+  <h1>css테스트</h1>
+
+    <div><p>가나다라마바사</p></div>
+    <div><p>아자차카타파하</p>
+    <p>abcdefg</p></div>
+    <div><p>hijklmnop</p><p>qrstuv</p></div>
+    <div><p>wxyz</p></div>
+
+    <p><a href="#a">Jump to New  1</a></p>
+    <p><a href="#b">Jump to New  2</a></p>
+
+    <p>Click on the links above and the :target selector highlight the current active HTML anchor.</p>
+
+    <p id="a"><b>New content 1...</b><b>작은 연못에서 시작된 길 </b></p>
+    <p id="b"><b>New content 2...</b><b>너 가는길이 너무지치고 힘들때</b></p>
+
+  <h3>lang</h3>
+  <p>korean<br><input></p>
+  <p>english<br><input required></p>
+
+  <p>age: <input type="number" min="1" max="100" value="17"></P>
+  <p><input type="text" name="fname" placeholder="홍길동"></p>
+
+  <p>가입인사:<br><input value="hello"></p>
+
+  <p>contry:<br><input readonly value="Korea"></p>
+
+  <p>e-mail<input type="email" value="support@example.com"></p>
+
+  </body>
+</html>

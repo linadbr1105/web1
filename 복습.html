@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>복습</title>
+    <script>
+      function projectA(self){
+        var target = document.querySelector('body')
+        if(self.value ==='night'){
+          target.style.backgroundColor = 'black';
+          target.style.color = 'white';
+          self.value = 'day';
+          alert('Goodnight');
+
+          var alist = document.querySelectorAll('li');
+          var i = 0;
+          while(i<alist.length){
+            alist[i].style.color = 'pink';
+            i = i+1;}
+        }else{
+          target.style.backgroundColor = 'white';
+          target.style.color = 'black';
+          self.value ='night';
+          alert('Goodmorning');
+
+          var alist = document.querySelectorAll('li');
+          var i = 0;
+          while(i<alist.length){
+            alist[i].style.color = 'black';
+            i = i+1;}
+        }
+      }
+
+      </script>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <input type="button" value="night" onclick="
+    projectA(this);
+    ">
+    <ol>
+      <li>나의 목표</li>
+      <li>내가 추구하는 가치</li>
+      <li>큰그림</li>
+    </ol>
+  </body>
+</html>
